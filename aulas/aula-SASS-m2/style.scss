@@ -1,0 +1,63 @@
+// Versão com sintaxe semelhante ao CSS [.scss]
+/* Aninhar até no máximo 4 tags por tag pai e bloco de código */
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; //
+}
+
+header {
+  border: solid 2px blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  h1 {
+    font-family: "BBH Sans Bogle", sans-serif;
+    letter-spacing: 2px;
+    color: red;
+  }
+
+  p {
+    color: rgb(255, 0, 183);
+  }
+}
+
+main {
+  flex-direction: column;
+  text-align: center;
+
+  .card-test {
+    border: solid 2px red;
+    width: 300px;
+    height: 200px;
+    background-image: color(rgba(255, 255, 255, 0.5)),
+      url("https://www.sabornamesa.com.br/media/k2/items/cache/ada34cd2101afafaba465aad112ee3c1_XL.jpg");
+    background-size: cover;
+    background-position: center;
+
+    h2 {
+      font-family: "BBH Sans Bogle", sans-serif;
+      letter-spacing: 2px;
+      font-size: 1.8em;
+    }
+
+    p {
+      color: rgb(0, 0, 0);
+      font-size: 0.8em;
+    }
+
+    p.p-link {
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+    }
+
+    a.a-link {
+      text-decoration: underline;
+      color: rgb(255, 0, 0);
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  padding-top: 55px;
+  text-align: center;
+}
+
+.form-container {
+  display: inline-block;
+  width: 400px;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 40px 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+.form-container h1 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  color: #222;
+}
+.form-container form input[type=text],
+.form-container form input[type=email],
+.form-container form input[type=password] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.form-container form .input-row {
+  padding-top: 15px;
+}
+.form-container form .input-row input {
+  width: 43%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  display: inline-block;
+}
+.form-container form .input-row input:first-child {
+  margin-right: 40px;
+}
+.form-container form .checkbox {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+  margin: 10px 0;
+}
+.form-container form .checkbox a {
+  color: #2764c0;
+  text-decoration: none;
+  display: inline-block;
+}
+.form-container form .checkbox a:hover {
+  text-decoration: underline;
+}
+.form-container button {
+  background-color: #e23d3d;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-container button:hover {
+  background-color: rgb(205.3094170404, 30.6905829596, 30.6905829596);
+}
+
+/* 
+MEDIDAS ABSOLUTAS
+px
+pt
+cm
+pc
+in
+
+MEDIDAS RELATIVAS
+% (Porcentagem) - Valor relativo ao tamanho do elemento pai [layout flexível]
+
+em - Relativo ao tamanho da fonte do próprio elemento pai [padding, margin e font-size]
+
+rem(root em) - Relativo ao tamanho da fonte do elemento raiz (normalmente HTML). boa para escalabilidade e manutenção. [font-size]
+
+vw(viewport width) - 1% da largura da janela de visualização (viewport) [width: 100%]
+
+vh(viewport height) - 1% da altura da janela de visualização
+
+vmin (viewport minimum)
+
+vmax (viewport maximum)
+*//*# sourceMappingURL=style.css.map */
