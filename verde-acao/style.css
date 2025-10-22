@@ -10,7 +10,7 @@ header {
   background-image: url("./img/banner.jpg");
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 50vh;
   color: white;
 }
 
@@ -24,25 +24,27 @@ header {
 }
 .box-header h1 {
   font-size: 5rem;
-  margin-bottom: 15px;
+  margin: 15px;
 }
 .box-header p {
   font-size: 1.1rem;
   font-weight: bold;
   width: 45vw;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .box-header button {
   background-color: #66BB6A;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin: 8px;
   border: none;
   border-radius: 30px;
-  padding: 15px 60px;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
+  padding: 18px 40px;
+  font-size: 1.5rem;
 }
 .box-header button:hover {
   background-color: rgb(76.3692307692, 171.8307692308, 80.8615384615);
@@ -50,13 +52,15 @@ header {
 
 .cards-container {
   text-align: center;
+  height: 70vh;
+  background-color: #F1F8E9;
 }
 
 article {
   width: 300px;
   height: 420px;
-  vertical-align: top;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  vertical-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
   display: inline-block;
   margin: 15px;
   border-radius: 8px;
@@ -76,6 +80,7 @@ article img {
 
 .card {
   text-align: center;
+  margin-top: 120px;
 }
 
 .card-content {
@@ -92,14 +97,28 @@ article img {
 .card-content button {
   background-color: #66BB6A;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin: 8px;
   border: none;
   border-radius: 30px;
-  padding: 15px 60px;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
+  padding: 12px 36px;
 }
 .card-content button:hover {
   background-color: rgb(76.3692307692, 171.8307692308, 80.8615384615);
+}
+
+.form-container {
+  text-align: center;
+  height: 60vh;
+}
+.form-container h2, .form-container p {
+  margin: 20px 0;
+}
+.form-container input[type=text], .form-container input[type=email] {
+  display: block;
+  text-align: left;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

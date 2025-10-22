@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Inicar Sessão</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Login</h1>
+      </header>
+      <section>
+        <form class="form-container">
+          <label for="email"
+            >Email
+            <input
+              id="email"
+              name="user-email"
+              type="email"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              title="Insira um e-mail no padrão válido. (email@email.com)"
+              placeholder="Insira seu email aqui"
+              required
+            />
+          </label>
+
+          <label for="password"
+            >Senha
+            <input
+              id="password"
+              name="user-password"
+              type="password"
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])(?:([0-9a-zA-Z$*&@#])(?!\1)){8,}$"
+              title="Sua senha deve conter pelo menos 8 caracteres, incluindo uma letra maiúscula, uma letra minúscula, um número e um símbolo especial ($, *, &, @ ou #)."
+              placeholder="Insira sua senha aqui"
+              required
+            />
+          </label>
+
+          <div>
+            <button type="submit" id="btn-submit">Login</button>
+          </div>
+
+          <div class="p-container">
+            <p>Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+            <p>
+              Esqueceu sua
+              <a
+                href="#"
+                onclick="
+              alert('Não é possível redefinir a senha, tente novamente mais tarde.');
+                "
+                >Senha</a
+              >?
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastrar-se</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Cadastro</h1>
+      </header>
+      <section>
+        <form class="form-container">""
+          <div class="form-row">
+            <label for="name"
+              >Nome
+              <input
+                id="name"
+                name="user-name"
+                type="text"
+                pattern="^[A-Za-zÀ-ÿ]+(?:[ '-][A-Za-zÀ-ÿ]{2,})*$"
+                title="O nome deve incluir apenas letras, podendo incluir espaços, apóstrofos ou hífens."
+                placeholder="Insira seu nome"
+                required
+              />
+            </label>
+  
+            <label for="last-name"
+              >Sobrenome
+              <input
+                id="last-name"
+                name="user-last-name"
+                type="text"
+                pattern="^[A-Za-zÀ-ÿ]+(?:[ '-][A-Za-zÀ-ÿ]{2,})*$"
+                title="O sobrenome deve incluir apenas letras, podendo incluir espaços, apóstrofos ou hífens."
+                placeholder="Insira seu nome"
+                required
+              />
+            </label>
+          </div>
+
+          <label for="email"
+            >Email
+            <input
+              id="email"
+              name="user-email"
+              type="email"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              title="Insira um e-mail no padrão válido. (email@email.com)"
+              placeholder="Insira seu e-mail"
+              required
+            />
+          </label>
+
+          <label for="password"
+            >Senha
+            <input
+              id="password"
+              name="user-password"
+              type="password"
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])(?:([0-9a-zA-Z$*&@#])(?!\1)){8,}$"
+              title="Sua senha deve conter pelo menos 8 caracteres, incluindo uma letra maiúscula, uma letra minúscula, um número e um símbolo especial ($, *, &, @ ou #)."
+              placeholder="Insira sua senha"
+              required
+            />
+          </label>
+
+          <div>
+            <button type="submit" id="btn-submit">Criar Conta</button>
+          </div>
+
+          <p>Já tem conta? <a href="login.html">Ir para Login</a></p>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
