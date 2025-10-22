@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$cor-verde: #66BB6A;
+
+@mixin green-btn {
+  background-color: $cor-verde;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 60px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken($cor-verde, 8%);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-image: url("./img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  color: white;
+}
+
+.box-header {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  padding: 110px 40px 40px 40px;
+  display: inline-block;
+  text-align: center;
+  height: inherit; // Herda o tamanho da primeira caixa [height: 80vh]
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 45vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  button {
+    @include green-btn();
+  }
+
+}
+
+.cards-container {
+  text-align: center;
+}
+
+article {
+  width: 300px;
+  height: 420px;
+  vertical-align: top;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 15px;
+  border-radius: 8px;
+  vertical-align: top;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px 8px 0 0;
+  }
+
+}
+
+.card {
+  text-align: center;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 22px
+  }
+
+  p {
+    margin-bottom: 40px;
+    min-height: 40px;
+  }
+  
+  button {
+    @include green-btn();
+  }
+}
