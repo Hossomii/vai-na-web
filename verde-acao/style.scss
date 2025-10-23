@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-$cor-verde: #66BB6A;
+$cor-verde: #66bb6a;
+$cor-cinza-claro: #767676;
 
-@mixin green-btn () {
+
+@mixin green-btn() {
   background-color: $cor-verde;
   font-weight: bold;
-  font-size: 1rem;       
-  margin: 8px;
+  font-size: 1rem;
   border: none;
   border-radius: 30px;
   color: white;
@@ -46,7 +47,6 @@ header {
   p {
     font-size: 1.1rem;
     font-weight: bold;
-    width: 45vw;
     margin: 0 auto;
     margin-bottom: 40px;
   }
@@ -55,13 +55,12 @@ header {
     padding: 18px 40px;
     font-size: 1.5rem;
   }
-
 }
 
 .cards-container {
   text-align: center;
   height: 70vh;
-  background-color: #F1F8E9;
+  background-color: #f1f8e9;
 }
 
 article {
@@ -70,7 +69,7 @@ article {
   vertical-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
   display: inline-block;
-  margin: 15px;
+  margin: 50px;
   border-radius: 8px;
   vertical-align: top;
   background-color: white;
@@ -83,7 +82,6 @@ article {
     display: block;
     border-radius: 8px 8px 0 0;
   }
-
 }
 
 .card {
@@ -96,14 +94,14 @@ article {
   text-align: center;
 
   h3 {
-    margin-bottom: 22px
+    margin-bottom: 22px;
   }
 
   p {
     margin-bottom: 40px;
     min-height: 40px;
   }
-  
+
   button {
     @include green-btn();
     padding: 12px 36px;
@@ -111,16 +109,108 @@ article {
 }
 
 .form-container {
+  background-color: #e8f5e9;
   text-align: center;
-  height: 60vh;
+  width: 100%;
+  min-height: 60vh;
+  padding-bottom: 100px;
 
-  h2, p {
-    margin: 20px 0;
+  .form-texts {
+    h2 {
+      font-size: 2rem;
+      padding-top: 50px;
+      color: #2a2a2a;
+      padding-bottom: 18px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $cor-cinza-claro;
+      width: 650px;
+      margin: 0 auto;
+      padding-bottom: 35px;
+    }
   }
+}
 
-  input[type="text"], input[type="email"] {
+.form {
+  width: 700px;
+  text-align: center;
+  display: inline-block;
+
+  input[type="text"],
+  input[type="email"] {
+    border: none;
     display: block;
     text-align: left;
     margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: white;
   }
+
+  select {
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 40px 20px 20px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $cor-cinza-claro;
+    background-color: white;
+    outline: none;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'><path d='M0 0 L5 6 L10 0 Z' fill='%23727272'/></svg>");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 16px) center;
+    background-size: 12px 8px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  &:focus {
+    border-color: black;
+    box-shadow: none;
+  }
+
+  /* remover o ícone nativo do IE/Edge */
+  &::-ms-expand {
+    display: none;
+  }
+
+  /* seta personalizada (SVG inline via data URI) */
+  select {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'><path d='M0 0 L5 6 L10 0 Z' fill='%23727272'/></svg>");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 16px) center; /* ajuste horizontal: quanto maior, mais para a esquerda */
+    background-size: 12px 8px;
+    cursor: pointer;
+  }
+
+  button {
+    @include green-btn();
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+}
+
+footer {
+  padding: 40px 0;
+  text-align: center;
+  background-color: $cor-verde;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
